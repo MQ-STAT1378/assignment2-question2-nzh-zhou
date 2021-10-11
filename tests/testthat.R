@@ -1,4 +1,4 @@
 library(testthat)
-library(Exercise2)
+library(banksim)
 
-test_check("Exercise2")
+test_check("banksim")

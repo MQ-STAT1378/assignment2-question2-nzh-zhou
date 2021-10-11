@@ -31,13 +31,15 @@ The data.frame `bank` simulates the customer arrival and service times
 of a bank. We use it here to simulate the queue system of a bank.
 
 ``` r
-library(Exercise2)
+library(banksim)
 head(Multiserver(bank$arrival_time, bank$service_time, 3))
+#> # A tibble: 6 × 4
 #>   Arrivals ServiceBegins ChosenServer ServiceEnds
-#> 1 118.9688      118.9688            1    148.7928
-#> 2 133.9700      133.9700            2    288.9776
-#> 3 325.6309      325.6309            3    356.3327
-#> 4 338.5996      338.5996            1    424.1283
-#> 5 371.9286      371.9286            2    652.2320
-#> 6 395.9377      395.9377            3    474.0537
+#>      <dbl>         <dbl>        <dbl>       <dbl>
+#> 1     119.          119.            1        149.
+#> 2     134.          134.            2        289.
+#> 3     326.          326.            3        356.
+#> 4     339.          339.            1        424.
+#> 5     372.          372.            2        652.
+#> 6     396.          396.            3        474.
 ```

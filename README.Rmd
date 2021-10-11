@@ -35,7 +35,7 @@ devtools::install_git("https://github.com/MQ-STAT1378/assignment2-question2-nzh-
 The data.frame `bank` simulates the customer arrival and service times of a bank. We use it here to simulate the queue system of a bank.
 
 ```{r example}
-library(Exercise2)
+library(banksim)
 head(Multiserver(bank$arrival_time, bank$service_time, 3))
 ```
 
