@@ -1,10 +1,12 @@
-Package: Exercise2
-Title: What the Package Does (One Line, Title Case)
+Package: banksim
+Title: Simulate the queue system of a bank
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+    person(given = "Ze Hong", 
+           family = "Zhou", 
+           role = c("aut", "cre"), 
+           email = "nzh.zhou@outlook.com")
+Description: The function `Multiserver` takes in customer service information and simulates the queue system of a bank.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
