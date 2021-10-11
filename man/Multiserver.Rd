@@ -7,9 +7,9 @@
 Multiserver(Arrivals, ServiceTimes, NumServers = 1)
 }
 \arguments{
-\item{Arrivals}{a vector of customer arrival times}
+\item{Arrivals}{a vector of customer arrival times in ascending order}
 
-\item{ServiceTimes}{a vector of customer service times}
+\item{ServiceTimes}{a vector of corresponding customer service times}
 
 \item{NumServers}{an integer of the number of service servers of a bank}
 }

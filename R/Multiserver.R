@@ -3,8 +3,8 @@
 #' This function takes information about customer arrival and service times
 #' and simulates the queuing system of a bank.
 #'
-#' @param Arrivals a vector of customer arrival times
-#' @param ServiceTimes a vector of customer service times
+#' @param Arrivals a vector of customer arrival times in ascending order
+#' @param ServiceTimes a vector of corresponding customer service times
 #' @param NumServers an integer of the number of service servers of a bank
 #'
 #' @return a data.frame simulating the queuing system of the bank:
