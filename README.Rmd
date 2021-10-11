@@ -1,0 +1,37 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# Queue system simulator
+
+This package simulates the customer queue system of a bank. In the function `Multiserver`, input information on the customer arrival and service time and the bank's number of customer service servers.
+
+## Installation
+
+You can install this package via github. First, clone the repository, which can be done by running `git clone https://github.com/MQ-STAT1378/assignment2-question2-nzh-zhou` in your shell (if you have access to this repo), then running the following code in R. Don't forget to delete the cloned local repository.
+
+``` {r github-install, eval = FALSE}
+# install.packages("devtools")
+devtools::install_git("https://github.com/MQ-STAT1378/assignment2-question2-nzh-zhou")
+```
+
+## Example
+
+The data.frame `bank` simulates the customer arrival and service times of a bank. We use it here to simulate the queue system of a bank.
+
+```{r example}
+library(Exercise2)
+head(Multiserver(bank$arrival_time, bank$service_time, 3))
+```
+
