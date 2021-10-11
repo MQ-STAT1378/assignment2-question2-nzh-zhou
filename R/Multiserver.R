@@ -1,3 +1,23 @@
+#' Simulate the queuing system of a bank
+#'
+#' This function takes information about customer arrival and service times
+#' and simulates the queuing system of a bank.
+#'
+#' @param Arrivals a vector of customer arrival times
+#' @param ServiceTimes a vector of customer service times
+#' @param NumServers an integer of the number of service servers of a bank
+#'
+#' @return a data.frame simulating the queuing system of the bank:
+#' \describe{
+#'   \item{Arrivals}{arrival time of a customer, in seconds}
+#'   \item{ServiceBegins}{the time that the customer service begins}
+#'   \item{ChosenServer}{the server that the customer goes through}
+#'   \item{ServiceEnds}{the time that the customer service ends}
+#' }
+#' @export
+#'
+#' @examples
+#' Multiserver(bank$arrival_time, bank$service_time, 3)
 Multiserver <- function(Arrivals, ServiceTimes, NumServers = 1) {
   if (any(Arrivals <= 0 | ServiceTimes <= 0) || NumServers <= 0){
     stop("Arrivals, ServiceTimes must be positive & NumServers must be positive" )

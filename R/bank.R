@@ -1,6 +1,6 @@
-#' Simulation of the customer queuing system of a bank
+#' Simulation of customer arrivals of a bank
 #'
-#' A dataset containing the customer arrival time and service time
+#' A dataset containing the customer arrival time and service time of a bank
 #'
 #' @format A data frame with 100 rows and 2 variables:
 #' \describe{

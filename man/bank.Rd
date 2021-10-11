@@ -3,7 +3,7 @@
 \docType{data}
 \name{bank}
 \alias{bank}
-\title{Simulation of the queuing system times of a bank}
+\title{Simulation of customer arrivals of a bank}
 \format{
 A data frame with 100 rows and 2 variables:
 \describe{
@@ -15,6 +15,6 @@ A data frame with 100 rows and 2 variables:
 bank
 }
 \description{
-A dataset containing the customer arrival time and service time
+A dataset containing the customer arrival time and service time of a bank
 }
 \keyword{datasets}
